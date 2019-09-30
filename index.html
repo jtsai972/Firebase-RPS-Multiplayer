@@ -12,6 +12,47 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <!--Title -->
+    <title>Multiplayer Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors Enhanced</h1>
+    </header>
+
+    <main>
+        <section id="game"></section>
+
+        <section id="score">
+            <div id="player1">
+                <h2>Player 1</h2>
+                <p>Wins: <span class="wins"></span></p>
+                <p>Losses: <span class="losses"></span></p>
+                <p>Ties: <span class="ties"></span></p>
+            </div>
+            <div id="player2">
+                <h2>Player 2</h2>
+                <p>Wins: <span class="wins"></span></p>
+                <p>Losses: <span class="losses"></span></p>
+                <p>Ties: <span class="ties"></span></p>
+            </div>
+        </section>
+        
+        <section id="chat">
+            <div id="log"></div>
+            <form>
+                <input type="text" name="chat" placeholder="Chat with your opponent">
+                <button>Send</button>
+            </form>
+        </section>>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Created by Jasmine</p>
+        <p>Powered by <a href="https://firebase.google.com/" rel="noopener noreferrer"></a></p>
+    </footer>
+
     <!-- Scripts -->
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -23,15 +64,6 @@
     <!-- Specific Firebase products we want (Database) -->
     <script 
         src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-    <script 
-        defer type="text/javascript" src="assets/javascript/game.js"></script>
-
-    <!--Title -->
-    <title>Document</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
