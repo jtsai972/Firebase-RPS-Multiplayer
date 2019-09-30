@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    transition: all ease 0.5s;
+}
+
+body {
+    display: flex;
+        flex-flow: column;
+    min-height: 100vh;
+}
+
+header, main, footer {
+    padding: 2em;
+}
+
+header, footer {
+    background: #222;
+    color: white;
+}
+
+header h1, main, footer p {
+    margin: 0 auto;
+    width: 90%;
+        max-width: 1080px;
+}
+
+footer {margin-top: auto;}
+
+section {background: rgba(0,0,0,0.2);}
+
+#score {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    #score div {
+        background: rgba(0,0,0,0.2);
+        width: 45%;
+    }
