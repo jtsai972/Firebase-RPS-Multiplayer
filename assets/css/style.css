@@ -11,11 +11,12 @@ body {
 }
 
 /* Text stuff */
-h1, h2 {
+h1, h2, h3 {
     font-weight: bold;
 }
 h1 {font-size: 3em;}
 h2 {font-size: 2.25em;}
+h3 {font-size: 1.5em;}
 
 header, main, footer {
     padding: 2em;
@@ -40,7 +41,10 @@ main {
 
 footer {margin-top: auto;}
 
-section {background: rgba(0,0,0,0.2);}
+section {
+    background: rgba(255,255,255, 0.7);
+    border: 1px solid #ddd;
+}
 
 #wrap {
     display: flex;
@@ -57,18 +61,18 @@ section {background: rgba(0,0,0,0.2);}
     width: 100%;
 }
     #score div {
-        background: rgba(0,0,0,0.2);
         display: flex;
             flex-flow: row;
             justify-content: center;
-        padding: 0.5em 1em;
     }
-    #score h2 {
+    #score h3 {
         margin: 0 0.5em;
         background: rgba(0,0,0,0.2);
+        padding: 0.5em 1em;
     }
 
 #game {
+    background: rgba(255,255,255, 0.6);
     padding: 1em;
 }
     #options {
@@ -96,10 +100,12 @@ section {background: rgba(0,0,0,0.2);}
         flex: 1 1 auto;
             align-self: stretch;
         padding: 0.25em;
+        margin-bottom: 0.5em;
     }
     #chat form {
         display: flex;
         margin-top: auto;
+        border: 1px solid #ccc;
     }
         #chat form input, #chat form button {
             border: none;
