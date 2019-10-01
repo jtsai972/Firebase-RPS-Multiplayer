@@ -4,10 +4,18 @@
 }
 
 body {
+    background: #ccc url("../images/intersection.png") repeat;
     display: flex;
         flex-flow: column;
     min-height: 100vh;
 }
+
+/* Text stuff */
+h1, h2 {
+    font-weight: bold;
+}
+h1 {font-size: 3em;}
+h2 {font-size: 2.25em;}
 
 header, main, footer {
     padding: 2em;
@@ -24,17 +32,77 @@ header h1, main, footer p {
         max-width: 1080px;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 footer {margin-top: auto;}
 
 section {background: rgba(0,0,0,0.2);}
 
-#score {
+#wrap {
     display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: column;
+    flex: 1 1 auto;
+    margin-right: 1em;
+    width: 60%;
+}
+
+#score {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    text-align: center;
+    width: 100%;
 }
     #score div {
         background: rgba(0,0,0,0.2);
-        width: 45%;
+        display: flex;
+            flex-flow: row;
+            justify-content: center;
+        padding: 0.5em 1em;
     }
+    #score h2 {
+        margin: 0 0.5em;
+        background: rgba(0,0,0,0.2);
+    }
+
+#game {
+    padding: 1em;
+}
+    #options {
+        display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+    }
+        #options figure {
+            flex: 0 1 auto;
+            padding: 1em;
+            text-align: center;
+        }
+            #options figure img {
+                width: 90%;
+            }
+
+#chat {
+    display: flex;
+        flex-flow: column;
+    padding: 0.5em;
+}
+    #log {
+        
+        background: rgba(0,0,0,0.2);
+        flex: 1 1 auto;
+            align-self: stretch;
+        padding: 0.25em;
+    }
+    #chat form {
+        display: flex;
+        margin-top: auto;
+    }
+        #chat form input, #chat form button {
+            border: none;
+            padding: 0.25em;
+        }
+

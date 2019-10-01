@@ -17,25 +17,40 @@
 </head>
 <body>
     <header>
-        <h1>Rock Paper Scissors Enhanced</h1>
+        <h1>Rock Paper Scissors 2.0</h1>
     </header>
 
     <main>
-    <section id="score">
-            <div id="player1">
-                <h2>Player 1</h2>
-                <p>Wins: <span class="wins"></span></p>
-                <p>Losses: <span class="losses"></span></p>
-                <p>Ties: <span class="ties"></span></p>
-            </div>
-            <div id="player2">
-                <h2>Player 2</h2>
-                <p>Wins: <span class="wins"></span></p>
-                <p>Losses: <span class="losses"></span></p>
-                <p>Ties: <span class="ties"></span></p>
-            </div>
-        </section>
-        <section id="game"></section>
+        <div id="wrap">
+            <section id="score">
+                <h1>Scoreboard</h1>
+                <div>
+                    <h2 id="player1">Player 1<br /><span>0</span></h2>
+                    <h2 id="ties">Ties<br /><span>0</span></h2>
+                    <h2 id="player2">Player 2<br /><span>0</span></h2>
+                </div>
+            </section>
+            <section id="game">
+                <h1>Make your choice</h1>
+                <div id="options">
+                    <figure>
+                        <img src="assets/images/rps-rock.png" alt="rock" />
+                        <figcaption>rock</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/images/rps-paper.png" alt="paper" />
+                        <figcaption>paper</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/images/rps-scissors.png" alt="scissors" />
+                        <figcaption>scissors</figcaption>
+                    </figure>
+                </div>
+                <div id="results">
+                    <!-- Maybe make a loading animation for fighting? idk-->
+                </div>
+            </section>
+        </div>
         
         <section id="chat">
             <div id="log"></div>
